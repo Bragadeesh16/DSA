@@ -14,12 +14,11 @@ class circular_linked_list:
             self.head = new_node
             self.head.next = self.head
         else:
-            new_node.next = self.head
             current = self.head
             while current.next != self.head:
                 current = current.next
             current.next = new_node
-            self.head = new_node
+            new_node.next = self.head
 
     def print_list(self):
         current = self.head
