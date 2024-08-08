@@ -4,7 +4,6 @@ class node:
         self.next = None
         self.prev = None
 
-
 class double_linked_list:
     def __init__(self) -> None:
         self.head = None
