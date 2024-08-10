@@ -1,11 +1,11 @@
-class node: #creating a new node
+class node:
     def __init__(self,x) -> None:
         self.item = x
         self.next = None
 
 class linked_list:
     def __init__(self) -> None:
-        self.head = None # define the head
+        self.head = None 
 
     def head_node(self,data):
         new_node = node(data) 
@@ -61,14 +61,12 @@ class linked_list:
         pointer_two = self.head.next
         current = None
         
-        
         if pointer_one == 0:
             return 0
         
         while pointer_one:
             print(pointer_one.item)
             while pointer_two:
-                print(pointer_two.ne)
                 if pointer_one.item < pointer_two.item:
                     temp = pointer_two
                     temp.next = current
